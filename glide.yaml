@@ -1,0 +1,41 @@
+package: github.com/directxman12/fake-metrics-server
+import:
+- package: github.com/golang/glog
+- package: github.com/spf13/pflag
+- package: k8s.io/api
+  subpackages:
+  - core/v1
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/api/errors
+  - pkg/api/resource
+  - pkg/apimachinery/announced
+  - pkg/apimachinery/registered
+  - pkg/apis/meta/internalversion
+  - pkg/apis/meta/v1
+  - pkg/fields
+  - pkg/labels
+  - pkg/runtime
+  - pkg/runtime/schema
+  - pkg/runtime/serializer
+  - pkg/util/wait
+- package: k8s.io/apiserver
+  subpackages:
+  - pkg/endpoints/request
+  - pkg/registry/rest
+  - pkg/server
+  - pkg/server/healthz
+  - pkg/server/options
+  - pkg/util/flag
+  - pkg/util/logs
+- package: k8s.io/client-go
+  subpackages:
+  - kubernetes
+  - listers/core/v1
+  - rest
+  - tools/cache
+- package: k8s.io/metrics
+  subpackages:
+  - pkg/apis/metrics
+  - pkg/apis/metrics/install
+  - pkg/apis/metrics/v1beta1
